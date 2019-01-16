@@ -1,0 +1,81 @@
+PODS:
+  - Action (3.9.1):
+    - RxCocoa (~> 4.3)
+    - RxSwift (~> 4.3)
+  - Alamofire (4.8.0)
+  - BaseRxApplication (1.0.0):
+    - Action
+    - CocoaLumberjack/Swift
+    - FTLinearActivityIndicator
+    - KeychainAccess
+    - MBProgressHUD
+    - ObjectMapper
+    - RxAlamofire
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+    - TTGSnackbar
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - FTLinearActivityIndicator (1.1.2)
+  - KeychainAccess (3.1.2)
+  - MBProgressHUD (1.1.0)
+  - ObjectMapper (3.4.2)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.2.0)
+  - SwiftLint (0.29.3)
+  - TTGSnackbar (1.7.5)
+
+DEPENDENCIES:
+  - BaseRxApplication
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - Alamofire
+    - CocoaLumberjack
+    - FTLinearActivityIndicator
+    - KeychainAccess
+    - MBProgressHUD
+    - ObjectMapper
+    - RxAlamofire
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+    - TTGSnackbar
+  https://github.com/garydossantos87/PodSpecs.git:
+    - BaseRxApplication
+
+SPEC CHECKSUMS:
+  Action: 2f461c203c480b17aa99b3bb166e4329ecff6908
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  BaseRxApplication: 30b3bc29caca908b7331161ea6f1f85fbffce9b9
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  FTLinearActivityIndicator: 795016cde13c7d7e9ee28e23f05025c6aedbafce
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
+  TTGSnackbar: 2cf4e7b6ffbe5cddf248a73f3ee952b71bee8ea3
+
+PODFILE CHECKSUM: e6b7a1b449b435f72d98db484cb6c86e0853cee5
+
+COCOAPODS: 1.6.0.beta.1

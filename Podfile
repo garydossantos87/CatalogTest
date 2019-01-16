@@ -1,5 +1,5 @@
-#source 'git@bitbucket.org:berepublicnetworkssl/specs.git'
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/garydossantos87/PodSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 # Uncomment this line to define a global platform for your project
 platform :ios, '10.0'
