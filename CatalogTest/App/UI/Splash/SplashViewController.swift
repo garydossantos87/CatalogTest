@@ -8,7 +8,11 @@
 
 import BaseRxApplication
 
-final class SplashViewController: CatalogueBaseViewController<SplashViewModel> {
+final class SplashViewController: BaseViewController<SplashViewModel> {
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
     override func createViewModel() -> SplashViewModel {
         return SplashViewModel()

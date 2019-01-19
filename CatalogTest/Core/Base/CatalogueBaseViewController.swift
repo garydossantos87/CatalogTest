@@ -13,7 +13,7 @@ import RxSwift
 class CatalogueBaseViewController<VM: BaseViewModel>: BaseViewController<VM>, UIScrollViewDelegate {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
-    
+
 }

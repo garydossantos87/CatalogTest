@@ -9,4 +9,25 @@
 import BaseRxApplication
 
 final class CatalogueViewModel: BaseViewModel {
+
+    private var catalogs: [Catalog]?
+
+    // ----------------------------
+    // MARK: - Public methods 🔓
+    // ----------------------------
+
+    func setup(withCatalogs catalogs: [Catalog]) {
+        self.catalogs = catalogs
+    }
+
+    // ---------------------------------------
+    // MARK: - Setup MultiLanguage 🌍
+    // ---------------------------------------
+
+    override func setupStaticStrings() {
+        super.setupStaticStrings()
+
+        navigationBarTitle.value = "Catálogos"
+    }
+
 }

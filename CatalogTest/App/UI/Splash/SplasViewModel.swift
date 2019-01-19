@@ -30,7 +30,7 @@ final class SplashViewModel: BaseViewModel {
             .subscribe { event in
                 switch event {
                 case .success(let catalogs):
-                    print(catalogs)
+                    self.wireframe.displayCatalogs(withCatalogs: catalogs)
                 case .error(let error):
                     self.actionError.execute(error.apiError())
                 }

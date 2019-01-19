@@ -9,7 +9,7 @@
 import BaseRxApplication
 import RxSwift
 
-final class CatalogueViewController: BaseViewController<CatalogueViewModel>  {
+final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewModel>  {
 
     override func createViewModel() -> CatalogueViewModel {
         return CatalogueViewModel()

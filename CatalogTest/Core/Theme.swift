@@ -35,12 +35,12 @@ enum ThemeStyle {
 
 enum ThemeFont {
 
-    case bold_14, regular_14
+    case bold_16, regular_14
 
     func font() -> UIFont {
         switch self {
-        case .bold_14:
-            return UIFont.boldSystemFont(ofSize: 14.0)
+        case .bold_16:
+            return UIFont.boldSystemFont(ofSize: 16.0)
         case .regular_14:
             return UIFont.systemFont(ofSize: 14.0)
         }
@@ -75,15 +75,15 @@ enum ThemeImage {
 
 enum ThemeColor {
 
-    case transparent, white, tundora
+    case transparent, white, thunderbird
 
     func color() -> UIColor {
 
         switch self {
         case .white:
             return .white
-        case .tundora:
-            return UIColor.rgb(rgbValue: 0x4E4E4E) // http://chir.ag/projects/name-that-color/#E53556
+        case .thunderbird:
+            return UIColor.rgb(rgbValue: 0xC9191F) // http://chir.ag/projects/name-that-color/#C9191F
         case .transparent:
             return UIColor.clear
         }
