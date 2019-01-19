@@ -16,8 +16,8 @@ final class AppGatewayImpl: AppGateway {
     
     private init() {}
     
-    func retrievePromotions() -> Single<[PromotionEntity]> {
-        return appService.retrievePromotions()
+    func retrieveCatalogs() -> Single<[CatalogEntity]> {
+        return appService.retrieveCatalogs()
     }
 
 }

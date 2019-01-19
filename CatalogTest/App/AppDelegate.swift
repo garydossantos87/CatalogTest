@@ -6,16 +6,18 @@
 //  Copyright © 2019 Gary Dos Santos. All rights reserved.
 //
 
-import UIKit
+import BaseRxApplication
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: BaseNavigationController?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        UIApplication.configureLinearNetworkActivityIndicatorIfNeeded()
+        displaySplashViewController()
         return true
     }
 
@@ -41,6 +43,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // ----------------------------
+    // MARK: - Private Func 🔐
+    // ----------------------------
 
+    private func setupNavigationController(viewControllers: [UIViewController]) {
+        navigationController = CatalogBaseNavigationController()
+        navigationController?.setViewControllers(viewControllers, animated: true)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+    }
+
+    private func displaySplashViewController() {
+        setupNavigationController(viewControllers: [SplashViewController()])
+    }
+    
 }
-

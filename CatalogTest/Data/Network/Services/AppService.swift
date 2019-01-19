@@ -11,8 +11,8 @@ import RxSwift
 
 final class AppService: NetworkProxy {
     
-    func retrievePromotions() -> Single<[PromotionEntity]> {
-        return processArray(networkService: NetworkAPI.promotions)
+    func retrieveCatalogs() -> Single<[CatalogEntity]> {
+        return processArray(networkService: NetworkAPI.catalogs)
     }
     
 }

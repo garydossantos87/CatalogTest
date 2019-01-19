@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD8A22CC21F30CF6005AB3DF /* PromotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A21BC21F30CF5005AB3DF /* PromotionRepository.swift */; };
 		BD8A22E721F30CF6005AB3DF /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A21D821F30CF5005AB3DF /* Promotion.swift */; };
-		BD8A230D21F30CF6005AB3DF /* GetPromotionListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A21FF21F30CF5005AB3DF /* GetPromotionListUseCase.swift */; };
-		BD8A232F21F30CF6005AB3DF /* GetPromotionListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A222221F30CF5005AB3DF /* GetPromotionListUseCaseImpl.swift */; };
 		BD8A23B321F30CF6005AB3DF /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22AB21F30CF6005AB3DF /* AppService.swift */; };
 		BD8A23B421F30CF6005AB3DF /* AppOauthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22AC21F30CF6005AB3DF /* AppOauthService.swift */; };
 		BD8A23B521F30CF6005AB3DF /* AppGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22AE21F30CF6005AB3DF /* AppGateway.swift */; };
@@ -18,7 +15,6 @@
 		BD8A23B721F30CF6005AB3DF /* AppOauthGatewayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22B121F30CF6005AB3DF /* AppOauthGatewayImpl.swift */; };
 		BD8A23B821F30CF6005AB3DF /* AppOauthGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22B221F30CF6005AB3DF /* AppOauthGateway.swift */; };
 		BD8A23B921F30CF6005AB3DF /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22B421F30CF6005AB3DF /* NetworkAPI.swift */; };
-		BD8A23C521F30CF6005AB3DF /* PromotionRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A22C121F30CF6005AB3DF /* PromotionRepositoryImpl.swift */; };
 		BD8A23CF21F30DE1005AB3DF /* PromotionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23CE21F30DE1005AB3DF /* PromotionEntity.swift */; };
 		BD8A23D121F30DEC005AB3DF /* PromotionEntityDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23D021F30DEC005AB3DF /* PromotionEntityDataMapper.swift */; };
 		BD8A23D321F30E6E005AB3DF /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23D221F30E6E005AB3DF /* ErrorEntity.swift */; };
@@ -27,6 +23,27 @@
 		BD8A23F921F317AC005AB3DF /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23F721F317AC005AB3DF /* CatalogueViewController.swift */; };
 		BD8A23FA21F317AC005AB3DF /* CatalogueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8A23F821F317AC005AB3DF /* CatalogueViewController.xib */; };
 		BD8A23FC21F317B8005AB3DF /* CatalogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */; };
+		BD8A240021F31925005AB3DF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23FE21F31925005AB3DF /* SplashViewController.swift */; };
+		BD8A240121F31925005AB3DF /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8A23FF21F31925005AB3DF /* SplashViewController.xib */; };
+		BD8A240321F31932005AB3DF /* SplasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240221F31932005AB3DF /* SplasViewModel.swift */; };
+		BD8A240621F31A2C005AB3DF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240521F31A2C005AB3DF /* Theme.swift */; };
+		BD8A240921F32803005AB3DF /* CatalogBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240821F32803005AB3DF /* CatalogBaseNavigationController.swift */; };
+		BD8A240B21F32834005AB3DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240A21F32834005AB3DF /* Constants.swift */; };
+		BD8A240D21F329D7005AB3DF /* CatalogueBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240C21F329D7005AB3DF /* CatalogueBaseViewController.swift */; };
+		BD8A240F21F32AED005AB3DF /* CouponEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240E21F32AED005AB3DF /* CouponEntity.swift */; };
+		BD8A241321F32B9A005AB3DF /* NearestStoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241221F32B9A005AB3DF /* NearestStoreEntity.swift */; };
+		BD8A241521F32C8E005AB3DF /* CatalogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241421F32C8E005AB3DF /* CatalogEntity.swift */; };
+		BD8A241721F33070005AB3DF /* NearestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241621F33070005AB3DF /* NearestStore.swift */; };
+		BD8A241921F33105005AB3DF /* NearestStoreEntityDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241821F33105005AB3DF /* NearestStoreEntityDataMapper.swift */; };
+		BD8A241B21F3317F005AB3DF /* CouponEntityDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241A21F3317F005AB3DF /* CouponEntityDataMapper.swift */; };
+		BD8A241D21F331B4005AB3DF /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241C21F331B4005AB3DF /* Coupon.swift */; };
+		BD8A241F21F33273005AB3DF /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A241E21F33273005AB3DF /* Catalog.swift */; };
+		BD8A242121F3332A005AB3DF /* CatalogEntityDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242021F3332A005AB3DF /* CatalogEntityDataMapper.swift */; };
+		BD8A242321F33487005AB3DF /* CatalogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242221F33487005AB3DF /* CatalogRepository.swift */; };
+		BD8A242521F334A9005AB3DF /* CatalogRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242421F334A9005AB3DF /* CatalogRepositoryImpl.swift */; };
+		BD8A242721F335F1005AB3DF /* GetCatalogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242621F335F1005AB3DF /* GetCatalogsUseCase.swift */; };
+		BD8A242921F33622005AB3DF /* GetCatalogsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242821F33622005AB3DF /* GetCatalogsUseCaseImpl.swift */; };
+		BD8A242C21F33A58005AB3DF /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242B21F33A58005AB3DF /* String+Utils.swift */; };
 		BDEA9ABC21EE4A7600537D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */; };
 		BDEA9AC321EE4A7700537D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC221EE4A7700537D41 /* Assets.xcassets */; };
 		BDEA9AC621EE4A7700537D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC421EE4A7700537D41 /* LaunchScreen.storyboard */; };
@@ -37,10 +54,7 @@
 		3418B468046BB8EF770ED1CB /* Pods-CatalogTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogTest.release.xcconfig"; path = "Target Support Files/Pods-CatalogTest/Pods-CatalogTest.release.xcconfig"; sourceTree = "<group>"; };
 		8924609DC018A50E321A83AA /* Pods_CatalogTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatalogTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D78EFD043E8E52F4666F69 /* Pods-CatalogTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogTest.debug.xcconfig"; path = "Target Support Files/Pods-CatalogTest/Pods-CatalogTest.debug.xcconfig"; sourceTree = "<group>"; };
-		BD8A21BC21F30CF5005AB3DF /* PromotionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionRepository.swift; sourceTree = "<group>"; };
 		BD8A21D821F30CF5005AB3DF /* Promotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
-		BD8A21FF21F30CF5005AB3DF /* GetPromotionListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPromotionListUseCase.swift; sourceTree = "<group>"; };
-		BD8A222221F30CF5005AB3DF /* GetPromotionListUseCaseImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPromotionListUseCaseImpl.swift; sourceTree = "<group>"; };
 		BD8A22AB21F30CF6005AB3DF /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		BD8A22AC21F30CF6005AB3DF /* AppOauthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOauthService.swift; sourceTree = "<group>"; };
 		BD8A22AE21F30CF6005AB3DF /* AppGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGateway.swift; sourceTree = "<group>"; };
@@ -48,7 +62,6 @@
 		BD8A22B121F30CF6005AB3DF /* AppOauthGatewayImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOauthGatewayImpl.swift; sourceTree = "<group>"; };
 		BD8A22B221F30CF6005AB3DF /* AppOauthGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOauthGateway.swift; sourceTree = "<group>"; };
 		BD8A22B421F30CF6005AB3DF /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
-		BD8A22C121F30CF6005AB3DF /* PromotionRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionRepositoryImpl.swift; sourceTree = "<group>"; };
 		BD8A23CE21F30DE1005AB3DF /* PromotionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionEntity.swift; sourceTree = "<group>"; };
 		BD8A23D021F30DEC005AB3DF /* PromotionEntityDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionEntityDataMapper.swift; sourceTree = "<group>"; };
 		BD8A23D221F30E6E005AB3DF /* ErrorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
@@ -57,6 +70,27 @@
 		BD8A23F721F317AC005AB3DF /* CatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
 		BD8A23F821F317AC005AB3DF /* CatalogueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogueViewController.xib; sourceTree = "<group>"; };
 		BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewModel.swift; sourceTree = "<group>"; };
+		BD8A23FE21F31925005AB3DF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		BD8A23FF21F31925005AB3DF /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		BD8A240221F31932005AB3DF /* SplasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplasViewModel.swift; sourceTree = "<group>"; };
+		BD8A240521F31A2C005AB3DF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BD8A240821F32803005AB3DF /* CatalogBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBaseNavigationController.swift; sourceTree = "<group>"; };
+		BD8A240A21F32834005AB3DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD8A240C21F329D7005AB3DF /* CatalogueBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueBaseViewController.swift; sourceTree = "<group>"; };
+		BD8A240E21F32AED005AB3DF /* CouponEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntity.swift; sourceTree = "<group>"; };
+		BD8A241221F32B9A005AB3DF /* NearestStoreEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestStoreEntity.swift; sourceTree = "<group>"; };
+		BD8A241421F32C8E005AB3DF /* CatalogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogEntity.swift; sourceTree = "<group>"; };
+		BD8A241621F33070005AB3DF /* NearestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStore.swift; sourceTree = "<group>"; };
+		BD8A241821F33105005AB3DF /* NearestStoreEntityDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStoreEntityDataMapper.swift; sourceTree = "<group>"; };
+		BD8A241A21F3317F005AB3DF /* CouponEntityDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponEntityDataMapper.swift; sourceTree = "<group>"; };
+		BD8A241C21F331B4005AB3DF /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
+		BD8A241E21F33273005AB3DF /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		BD8A242021F3332A005AB3DF /* CatalogEntityDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogEntityDataMapper.swift; sourceTree = "<group>"; };
+		BD8A242221F33487005AB3DF /* CatalogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepository.swift; sourceTree = "<group>"; };
+		BD8A242421F334A9005AB3DF /* CatalogRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepositoryImpl.swift; sourceTree = "<group>"; };
+		BD8A242621F335F1005AB3DF /* GetCatalogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogsUseCase.swift; sourceTree = "<group>"; };
+		BD8A242821F33622005AB3DF /* GetCatalogsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogsUseCaseImpl.swift; sourceTree = "<group>"; };
+		BD8A242B21F33A58005AB3DF /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		BDEA9AB821EE4A7600537D41 /* CatalogTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEA9AC221EE4A7700537D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +123,7 @@
 		BD8A21B621F30C68005AB3DF /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				BD8A240A21F32834005AB3DF /* Constants.swift */,
 				BD8A23D421F30F28005AB3DF /* Resources */,
 			);
 			path = Commons;
@@ -97,8 +132,8 @@
 		BD8A21B821F30CF5005AB3DF /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				BD8A21B921F30CF5005AB3DF /* Repository */,
 				BD8A21CD21F30CF5005AB3DF /* Entity */,
+				BD8A21B921F30CF5005AB3DF /* Repository */,
 				BD8A21E821F30CF5005AB3DF /* UseCase */,
 			);
 			path = Domain;
@@ -107,7 +142,7 @@
 		BD8A21B921F30CF5005AB3DF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				BD8A21BC21F30CF5005AB3DF /* PromotionRepository.swift */,
+				BD8A242221F33487005AB3DF /* CatalogRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -115,6 +150,9 @@
 		BD8A21CD21F30CF5005AB3DF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BD8A241E21F33273005AB3DF /* Catalog.swift */,
+				BD8A241C21F331B4005AB3DF /* Coupon.swift */,
+				BD8A241621F33070005AB3DF /* NearestStore.swift */,
 				BD8A21D821F30CF5005AB3DF /* Promotion.swift */,
 			);
 			path = Entity;
@@ -124,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BD8A220921F30CF5005AB3DF /* Implemetation */,
-				BD8A21FF21F30CF5005AB3DF /* GetPromotionListUseCase.swift */,
+				BD8A242621F335F1005AB3DF /* GetCatalogsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -132,7 +170,7 @@
 		BD8A220921F30CF5005AB3DF /* Implemetation */ = {
 			isa = PBXGroup;
 			children = (
-				BD8A222221F30CF5005AB3DF /* GetPromotionListUseCaseImpl.swift */,
+				BD8A242821F33622005AB3DF /* GetCatalogsUseCaseImpl.swift */,
 			);
 			path = Implemetation;
 			sourceTree = "<group>";
@@ -152,7 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				BD8A227921F30CF6005AB3DF /* Mapper */,
+				BD8A241421F32C8E005AB3DF /* CatalogEntity.swift */,
+				BD8A240E21F32AED005AB3DF /* CouponEntity.swift */,
 				BD8A23D221F30E6E005AB3DF /* ErrorEntity.swift */,
+				BD8A241221F32B9A005AB3DF /* NearestStoreEntity.swift */,
 				BD8A23CE21F30DE1005AB3DF /* PromotionEntity.swift */,
 			);
 			path = Entity;
@@ -161,6 +202,9 @@
 		BD8A227921F30CF6005AB3DF /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				BD8A242021F3332A005AB3DF /* CatalogEntityDataMapper.swift */,
+				BD8A241A21F3317F005AB3DF /* CouponEntityDataMapper.swift */,
+				BD8A241821F33105005AB3DF /* NearestStoreEntityDataMapper.swift */,
 				BD8A23D021F30DEC005AB3DF /* PromotionEntityDataMapper.swift */,
 			);
 			path = Mapper;
@@ -214,7 +258,7 @@
 		BD8A22B621F30CF6005AB3DF /* RepositoryImplementation */ = {
 			isa = PBXGroup;
 			children = (
-				BD8A22C121F30CF6005AB3DF /* PromotionRepositoryImpl.swift */,
+				BD8A242421F334A9005AB3DF /* CatalogRepositoryImpl.swift */,
 			);
 			path = RepositoryImplementation;
 			sourceTree = "<group>";
@@ -242,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				BD8A23F621F31791005AB3DF /* Catalogue */,
+				BD8A23FD21F3190F005AB3DF /* Splash */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -262,6 +307,43 @@
 				BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */,
 			);
 			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		BD8A23FD21F3190F005AB3DF /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A23FE21F31925005AB3DF /* SplashViewController.swift */,
+				BD8A23FF21F31925005AB3DF /* SplashViewController.xib */,
+				BD8A240221F31932005AB3DF /* SplasViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BD8A240421F31A20005AB3DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A240721F327E6005AB3DF /* Base */,
+				BD8A242A21F33A46005AB3DF /* Extensions */,
+				BD8A240521F31A2C005AB3DF /* Theme.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BD8A240721F327E6005AB3DF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A240821F32803005AB3DF /* CatalogBaseNavigationController.swift */,
+				BD8A240C21F329D7005AB3DF /* CatalogueBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BD8A242A21F33A46005AB3DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A242B21F33A58005AB3DF /* String+Utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BDEA9AAF21EE4A7600537D41 = {
@@ -287,6 +369,7 @@
 			children = (
 				BD8A21B521F30C5D005AB3DF /* App */,
 				BD8A21B621F30C68005AB3DF /* Commons */,
+				BD8A240421F31A20005AB3DF /* Core */,
 				BD8A226C21F30CF5005AB3DF /* Data */,
 				BD8A21B821F30CF5005AB3DF /* Domain */,
 			);
@@ -373,6 +456,7 @@
 				BD8A23FA21F317AC005AB3DF /* CatalogueViewController.xib in Resources */,
 				BDEA9AC621EE4A7700537D41 /* LaunchScreen.storyboard in Resources */,
 				BDEA9AC321EE4A7700537D41 /* Assets.xcassets in Resources */,
+				BD8A240121F31925005AB3DF /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,25 +540,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8A240B21F32834005AB3DF /* Constants.swift in Sources */,
 				BD8A23B321F30CF6005AB3DF /* AppService.swift in Sources */,
-				BD8A22CC21F30CF6005AB3DF /* PromotionRepository.swift in Sources */,
 				BD8A23D321F30E6E005AB3DF /* ErrorEntity.swift in Sources */,
+				BD8A240621F31A2C005AB3DF /* Theme.swift in Sources */,
 				BD8A23B921F30CF6005AB3DF /* NetworkAPI.swift in Sources */,
 				BD8A23FC21F317B8005AB3DF /* CatalogueViewModel.swift in Sources */,
+				BD8A241B21F3317F005AB3DF /* CouponEntityDataMapper.swift in Sources */,
+				BD8A242521F334A9005AB3DF /* CatalogRepositoryImpl.swift in Sources */,
 				BD8A23B621F30CF6005AB3DF /* AppGatewayImpl.swift in Sources */,
+				BD8A240321F31932005AB3DF /* SplasViewModel.swift in Sources */,
 				BD8A23B721F30CF6005AB3DF /* AppOauthGatewayImpl.swift in Sources */,
-				BD8A230D21F30CF6005AB3DF /* GetPromotionListUseCase.swift in Sources */,
+				BD8A242121F3332A005AB3DF /* CatalogEntityDataMapper.swift in Sources */,
+				BD8A242921F33622005AB3DF /* GetCatalogsUseCaseImpl.swift in Sources */,
 				BD8A23D121F30DEC005AB3DF /* PromotionEntityDataMapper.swift in Sources */,
+				BD8A241F21F33273005AB3DF /* Catalog.swift in Sources */,
 				BD8A23B421F30CF6005AB3DF /* AppOauthService.swift in Sources */,
-				BD8A23C521F30CF6005AB3DF /* PromotionRepositoryImpl.swift in Sources */,
 				BD8A23E421F30FFB005AB3DF /* PromotionModel.swift in Sources */,
+				BD8A240021F31925005AB3DF /* SplashViewController.swift in Sources */,
 				BDEA9ABC21EE4A7600537D41 /* AppDelegate.swift in Sources */,
-				BD8A232F21F30CF6005AB3DF /* GetPromotionListUseCaseImpl.swift in Sources */,
+				BD8A240D21F329D7005AB3DF /* CatalogueBaseViewController.swift in Sources */,
+				BD8A240F21F32AED005AB3DF /* CouponEntity.swift in Sources */,
+				BD8A241721F33070005AB3DF /* NearestStore.swift in Sources */,
+				BD8A241321F32B9A005AB3DF /* NearestStoreEntity.swift in Sources */,
+				BD8A242321F33487005AB3DF /* CatalogRepository.swift in Sources */,
+				BD8A242721F335F1005AB3DF /* GetCatalogsUseCase.swift in Sources */,
+				BD8A241921F33105005AB3DF /* NearestStoreEntityDataMapper.swift in Sources */,
 				BD8A23E821F30FFB005AB3DF /* PromotionModelDataMapper.swift in Sources */,
+				BD8A240921F32803005AB3DF /* CatalogBaseNavigationController.swift in Sources */,
 				BD8A23B821F30CF6005AB3DF /* AppOauthGateway.swift in Sources */,
+				BD8A241D21F331B4005AB3DF /* Coupon.swift in Sources */,
 				BD8A22E721F30CF6005AB3DF /* Promotion.swift in Sources */,
 				BD8A23B521F30CF6005AB3DF /* AppGateway.swift in Sources */,
+				BD8A242C21F33A58005AB3DF /* String+Utils.swift in Sources */,
 				BD8A23F921F317AC005AB3DF /* CatalogueViewController.swift in Sources */,
+				BD8A241521F32C8E005AB3DF /* CatalogEntity.swift in Sources */,
 				BD8A23CF21F30DE1005AB3DF /* PromotionEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

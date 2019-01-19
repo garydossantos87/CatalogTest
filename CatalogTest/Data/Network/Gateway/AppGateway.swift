@@ -11,6 +11,6 @@ import BaseRxApplication
 
 protocol AppGateway {
         
-    func retrievePromotions() -> Single<[PromotionEntity]>
+    func retrieveCatalogs() -> Single<[CatalogEntity]>
     
 }
