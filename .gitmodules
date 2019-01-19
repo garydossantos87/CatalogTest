@@ -1,0 +1,3 @@
+[submodule "external"]
+	path = external
+	url = https://github.com/garydossantos87/catalog_translations.git

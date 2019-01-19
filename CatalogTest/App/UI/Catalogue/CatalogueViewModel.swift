@@ -27,7 +27,7 @@ final class CatalogueViewModel: BaseViewModel {
     override func setupStaticStrings() {
         super.setupStaticStrings()
 
-        navigationBarTitle.value = "Catálogos"
+        navigationBarTitle.value = "catalogs".localized.uppercased()
     }
 
 }
