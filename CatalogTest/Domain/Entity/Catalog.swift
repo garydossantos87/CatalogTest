@@ -12,11 +12,11 @@ import BaseRxApplication
 final class Catalog: BaseEntity {
 
     var id: String? = nil
-    var coupon: Coupon = Coupon()
+    var coupon: Coupon? = nil
     var dateEnd: Date = Date()
     var retailerId: String = ""
     var retailerName: String = ""
-    var nearestStore: NearestStore = NearestStore()
+    var nearestStore: NearestStore? = nil
 
     override func mapping(map: Map) {
         id                  <- map["catalog_id"]

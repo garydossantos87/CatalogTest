@@ -19,7 +19,7 @@ import BaseRxApplication
 
 enum ThemeStyle {
 
-    case baseButton
+    case baseButton, textH0, textH1
 
     func style() -> Style {
         switch self {
@@ -28,6 +28,17 @@ enum ThemeStyle {
             style.font = ThemeFont.regular_14.font()
             style.backgroundColor = ThemeColor.transparent.color()
             return style
+        case .textH0:
+            var style = Style()
+            style.font = ThemeFont.regular_14.font()
+            style.backgroundColor = ThemeColor.chatelle.color()
+            return style
+        case .textH1:
+            var style = Style()
+            style.font = ThemeFont.regular_12.font()
+            style.backgroundColor = ThemeColor.snowFlurry.color()
+            style.alignment = .center
+            return style
         }
     }
 
@@ -35,7 +46,7 @@ enum ThemeStyle {
 
 enum ThemeFont {
 
-    case bold_16, regular_14
+    case bold_16, regular_14, regular_12
 
     func font() -> UIFont {
         switch self {
@@ -43,6 +54,8 @@ enum ThemeFont {
             return UIFont.boldSystemFont(ofSize: 16.0)
         case .regular_14:
             return UIFont.systemFont(ofSize: 14.0)
+        case .regular_12:
+            return UIFont.systemFont(ofSize: 12.0)
         }
     }
     // Helper method to unwrap the UIFont
@@ -58,7 +71,7 @@ enum ThemeFont {
 
 enum ThemeImage {
 
-    case planet
+    case planet, favorite, share, save
 
     func image() -> UIImage {
         var imageName = ""
@@ -66,6 +79,12 @@ enum ThemeImage {
         switch self {
         case .planet:
             imageName = "ic_planet"
+        case .favorite:
+            imageName = "ic_favorite"
+        case .share:
+            imageName = "ic_share"
+        case .save:
+            imageName = "ic_save"
         }
 
         return UIImage.imageWithImageName(imageName)
@@ -75,7 +94,7 @@ enum ThemeImage {
 
 enum ThemeColor {
 
-    case transparent, white, thunderbird
+    case transparent, white, thunderbird, chatelle, snowFlurry
 
     func color() -> UIColor {
 
@@ -86,6 +105,10 @@ enum ThemeColor {
             return UIColor.rgb(rgbValue: 0xC9191F) // http://chir.ag/projects/name-that-color/#C9191F
         case .transparent:
             return UIColor.clear
+        case .chatelle:
+            return UIColor.rgb(rgbValue: 0xB4ACB8) // http://chir.ag/projects/name-that-color/#B4ACB8
+        case .snowFlurry:
+            return UIColor.rgb(rgbValue: 0xE3FFDA) // http://chir.ag/projects/name-that-color/#E3FFDA
         }
     }
 
