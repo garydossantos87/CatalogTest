@@ -9,14 +9,13 @@
 import BaseRxApplication
 import RxSwift
 
-final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewModel>, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate  {
+final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewModel>, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout  {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    private let clusterListFlowLayout = CenterCellCollectionViewFlowLayout()
-    private let itemWidthPercentage: CGFloat = 1.0
-    private var itemHeight: CGFloat = 293.0
-    
+    private let flowLayoutSize: CGFloat = 8.0
+    private let flowLayout = UICollectionViewFlowLayout()
+
     override func createViewModel() -> CatalogueViewModel {
         return CatalogueViewModel()
     }
@@ -46,21 +45,20 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
     // ----------------------------
 
     private func setupFlowLayout() {
-        clusterListFlowLayout.sectionInset = UIEdgeInsets.zero
-        clusterListFlowLayout.minimumLineSpacing = Constants.zero
-        clusterListFlowLayout.minimumInteritemSpacing = Constants.zero
-        clusterListFlowLayout.headerReferenceSize = CGSize.zero
-        clusterListFlowLayout.footerReferenceSize = CGSize.zero
-        clusterListFlowLayout.itemSize = CGSize(width: (UIScreen.main.bounds.width * itemWidthPercentage).rounded(), height: itemHeight)
-        clusterListFlowLayout.scrollDirection = .vertical
+        flowLayout.footerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
+        flowLayout.headerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
+        flowLayout.sectionInset = UIEdgeInsets(top: flowLayoutSize - 2.0 , left: flowLayoutSize, bottom: flowLayoutSize - 2.0, right: flowLayoutSize)
+        flowLayout.minimumLineSpacing = flowLayoutSize
+        flowLayout.minimumInteritemSpacing = flowLayoutSize
     }
 
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = ThemeColor.transparent.color()
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.setCollectionViewLayout(clusterListFlowLayout, animated: true)
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.contentInsetAdjustmentBehavior = .always
+        collectionView.setCollectionViewLayout(flowLayout, animated: true)
         registerCollectionCells()
     }
 
@@ -90,4 +88,28 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
         }
         return UICollectionViewCell()
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let totalSpace = flowLayout.sectionInset.left
+            + flowLayout.sectionInset.right
+            + (flowLayout.minimumInteritemSpacing * CGFloat(cellsPerRow() - 1))
+        let size = (collectionView.bounds.width - totalSpace) / CGFloat(cellsPerRow())
+        return CGSize(width: size, height: size * viewModel.heightByType(indexPath: indexPath))
+    }
+
+    // ----------------------------
+    // MARK: - Private Func 🔐
+    // ----------------------------
+
+    private func cellsPerRow() -> Int {
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad where UIDevice.current.orientation.isLandscape:
+            return 6
+        case .pad where UIDevice.current.orientation.isPortrait:
+            return 3
+        default:
+            return 2
+        }
+    }
+
 }

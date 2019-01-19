@@ -52,6 +52,7 @@
 		BDEA9ABC21EE4A7600537D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */; };
 		BDEA9AC321EE4A7700537D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC221EE4A7700537D41 /* Assets.xcassets */; };
 		BDEA9AC621EE4A7700537D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC421EE4A7700537D41 /* LaunchScreen.storyboard */; };
+		BDECD4EC21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */; };
 		CE31BB564037B42D3AB98CDD /* Pods_CatalogTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8924609DC018A50E321A83AA /* Pods_CatalogTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEA9AC221EE4A7700537D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEA9AC721EE4A7700537D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogBaseColumnFlowLayout.swift; sourceTree = "<group>"; };
 		BDF098A221F3590000E79D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -342,6 +344,7 @@
 		BD8A240721F327E6005AB3DF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */,
 				BD8A240821F32803005AB3DF /* CatalogBaseNavigationController.swift */,
 				BD8A240C21F329D7005AB3DF /* CatalogueBaseViewController.swift */,
 			);
@@ -645,6 +648,7 @@
 				BD8A240921F32803005AB3DF /* CatalogBaseNavigationController.swift in Sources */,
 				BD8A23B821F30CF6005AB3DF /* AppOauthGateway.swift in Sources */,
 				BD8A241D21F331B4005AB3DF /* Coupon.swift in Sources */,
+				BDECD4EC21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift in Sources */,
 				BD8A23B521F30CF6005AB3DF /* AppGateway.swift in Sources */,
 				BD8A242C21F33A58005AB3DF /* String+Utils.swift in Sources */,
 				BD8A23F921F317AC005AB3DF /* CatalogueViewController.swift in Sources */,

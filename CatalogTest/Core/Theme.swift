@@ -19,19 +19,26 @@ import BaseRxApplication
 
 enum ThemeStyle {
 
-    case textH0, textH1
+    case textH0, textH1, textH2
 
     func style() -> Style {
         switch self {
         case .textH0:
             var style = Style()
-            style.font = ThemeFont.regular_15.font()
+            style.font = ThemeFont.regular_14.font()
             style.textColor = ThemeColor.chatelle.color()
             return style
         case .textH1:
             var style = Style()
-            style.font = ThemeFont.bold_14.font()
+            style.font = ThemeFont.regular_12.font()
             style.textColor = ThemeColor.sprout.color()
+            style.alignment = .center
+            return style
+        case .textH2:
+            var style = Style()
+            style.font = ThemeFont.regular_12.font()
+            style.textColor = ThemeColor.white.color()
+            style.backgroundColor = ThemeColor.thunderbird.color()
             style.alignment = .center
             return style
         }
@@ -41,7 +48,7 @@ enum ThemeStyle {
 
 enum ThemeFont {
 
-    case bold_14, bold_16, regular_15
+    case bold_14, bold_16, regular_12, regular_14
 
     func font() -> UIFont {
         switch self {
@@ -49,8 +56,10 @@ enum ThemeFont {
             return UIFont.boldSystemFont(ofSize: 14.0)
         case .bold_16:
             return UIFont.boldSystemFont(ofSize: 16.0)
-        case .regular_15:
-            return UIFont.systemFont(ofSize: 15.0)
+        case .regular_12:
+            return UIFont.systemFont(ofSize: 12.0)
+        case .regular_14:
+            return UIFont.systemFont(ofSize: 14.0)
         }
     }
     // Helper method to unwrap the UIFont
@@ -81,9 +90,9 @@ enum ThemeImage {
         case .save:
             imageName = "ic_save"
         case .catalog:
-            imageName = "ic_save"
+            imageName = "ic_catalog"
         case .coupon:
-            imageName = "ic_save"
+            imageName = "ic_coupon"
         }
 
         return UIImage.imageWithImageName(imageName)

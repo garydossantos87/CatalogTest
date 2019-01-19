@@ -14,8 +14,6 @@ final class CatalogViewCell: BaseCollectionCellView<CatalogViewCellModel> {
 
     @IBOutlet weak var catalogView: CatalogView!
 
-    static let preferredHeight: CGFloat = 153.0
-
     // ----------------------------
     // MARK: - Setups
     // ----------------------------

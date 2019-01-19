@@ -10,6 +10,8 @@ import BaseRxApplication
 
 final class CatalogueViewModel: BaseViewModel {
 
+    private let catalogHeight: CGFloat = 1.8
+    private let couponHeight: CGFloat = 1.6
     private let catalogModelDataMapper = CatalogModelDataMapper()
     private var catalogs: [Catalog]?
     private var catalogsModel: [CatalogModel] = []
@@ -36,6 +38,11 @@ final class CatalogueViewModel: BaseViewModel {
         let viewModel = CatalogViewCellModel()
         viewModel.setup(withCatalogModel: catalogModel)
         return viewModel
+    }
+
+    func heightByType(indexPath: IndexPath) -> CGFloat {
+        let catalogModel = catalogsModel[indexPath.row]
+        return catalogModel.type == .catalog ? catalogHeight : couponHeight
     }
 
 //    func onBottomContainerPushed(type: ClusterMapDetailType, parkingIndexPath: IndexPath) {

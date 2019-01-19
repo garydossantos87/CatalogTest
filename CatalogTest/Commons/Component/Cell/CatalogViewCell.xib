@@ -20,16 +20,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SI-Lk-hdx" customClass="CatalogView" customModule="CatalogTest" customModuleProvider="target">
-                        <rect key="frame" x="5" y="5" width="381" height="310"/>
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="315"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="4SI-Lk-hdx" secondAttribute="bottom" id="Nkl-pk-3Zz"/>
-                <constraint firstItem="4SI-Lk-hdx" firstAttribute="top" secondItem="XyV-Mx-BzP" secondAttribute="top" constant="5" id="TSu-Vf-dML"/>
-                <constraint firstItem="4SI-Lk-hdx" firstAttribute="leading" secondItem="XyV-Mx-BzP" secondAttribute="leading" constant="5" id="n3k-vL-txY"/>
-                <constraint firstAttribute="trailing" secondItem="4SI-Lk-hdx" secondAttribute="trailing" constant="5" id="vll-bo-wzO"/>
+                <constraint firstItem="4SI-Lk-hdx" firstAttribute="top" secondItem="XyV-Mx-BzP" secondAttribute="top" id="TSu-Vf-dML"/>
+                <constraint firstItem="4SI-Lk-hdx" firstAttribute="leading" secondItem="XyV-Mx-BzP" secondAttribute="leading" id="n3k-vL-txY"/>
+                <constraint firstAttribute="trailing" secondItem="4SI-Lk-hdx" secondAttribute="trailing" id="vll-bo-wzO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Zbe-Tf-uw7"/>
             <size key="customSize" width="391" height="315"/>

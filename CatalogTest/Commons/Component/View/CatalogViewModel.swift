@@ -16,6 +16,7 @@ final class CatalogViewModel {
     let share = BehaviorSubject(value: ThemeImage.share.image())
     let save = BehaviorSubject(value: ThemeImage.save.image())
     let type = BehaviorSubject<CatalogType?>(value: nil)
+    let coupon = BehaviorSubject(value: "coupon".localized.uppercased())
 
     // ----------------------------
     // MARK: - Public methods 🔓
