@@ -36,5 +36,11 @@ final class CatalogView: BaseView {
 
     override func setupRx() {
         super.setupRx()
+
+        viewModel.name.bind(to: nameLabel.rx.text).disposed(by: disposeBag)
+        viewModel.favorite.bind(to: favoriteButton.rx.image()).disposed(by: disposeBag)
+        viewModel.save.bind(to: saveButton.rx.image()).disposed(by: disposeBag)
+        viewModel.share.bind(to: shareButton.rx.image()).disposed(by: disposeBag)
+        viewModel.date.bind(to: dateLabel.rx.text).disposed(by: disposeBag)
     }
 }

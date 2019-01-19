@@ -19,24 +19,19 @@ import BaseRxApplication
 
 enum ThemeStyle {
 
-    case baseButton, textH0, textH1
+    case textH0, textH1
 
     func style() -> Style {
         switch self {
-        case .baseButton:
-            var style = Style()
-            style.font = ThemeFont.regular_14.font()
-            style.backgroundColor = ThemeColor.transparent.color()
-            return style
         case .textH0:
             var style = Style()
-            style.font = ThemeFont.regular_14.font()
-            style.backgroundColor = ThemeColor.chatelle.color()
+            style.font = ThemeFont.regular_15.font()
+            style.textColor = ThemeColor.chatelle.color()
             return style
         case .textH1:
             var style = Style()
-            style.font = ThemeFont.regular_12.font()
-            style.backgroundColor = ThemeColor.snowFlurry.color()
+            style.font = ThemeFont.bold_14.font()
+            style.textColor = ThemeColor.sprout.color()
             style.alignment = .center
             return style
         }
@@ -46,16 +41,16 @@ enum ThemeStyle {
 
 enum ThemeFont {
 
-    case bold_16, regular_14, regular_12
+    case bold_14, bold_16, regular_15
 
     func font() -> UIFont {
         switch self {
+        case .bold_14:
+            return UIFont.boldSystemFont(ofSize: 14.0)
         case .bold_16:
             return UIFont.boldSystemFont(ofSize: 16.0)
-        case .regular_14:
-            return UIFont.systemFont(ofSize: 14.0)
-        case .regular_12:
-            return UIFont.systemFont(ofSize: 12.0)
+        case .regular_15:
+            return UIFont.systemFont(ofSize: 15.0)
         }
     }
     // Helper method to unwrap the UIFont
@@ -71,7 +66,7 @@ enum ThemeFont {
 
 enum ThemeImage {
 
-    case planet, favorite, share, save
+    case planet, favorite, share, save, catalog, coupon
 
     func image() -> UIImage {
         var imageName = ""
@@ -80,10 +75,14 @@ enum ThemeImage {
         case .planet:
             imageName = "ic_planet"
         case .favorite:
-            imageName = "ic_favorite"
+            imageName = "ic_fav"
         case .share:
             imageName = "ic_share"
         case .save:
+            imageName = "ic_save"
+        case .catalog:
+            imageName = "ic_save"
+        case .coupon:
             imageName = "ic_save"
         }
 
@@ -94,7 +93,7 @@ enum ThemeImage {
 
 enum ThemeColor {
 
-    case transparent, white, thunderbird, chatelle, snowFlurry
+    case transparent, white, thunderbird, chatelle, sprout
 
     func color() -> UIColor {
 
@@ -107,8 +106,8 @@ enum ThemeColor {
             return UIColor.clear
         case .chatelle:
             return UIColor.rgb(rgbValue: 0xB4ACB8) // http://chir.ag/projects/name-that-color/#B4ACB8
-        case .snowFlurry:
-            return UIColor.rgb(rgbValue: 0xE3FFDA) // http://chir.ag/projects/name-that-color/#E3FFDA
+        case .sprout:
+            return UIColor.rgb(rgbValue: 0xB6D9B0) // http://chir.ag/projects/name-that-color/#B6D9B0
         }
     }
 

@@ -22,6 +22,6 @@ struct Constants {
     // MARK: - Formats
     // ------------------------
 
-    public static let dateFormat: String = "dd/mm/yyyy"
+    public static let dateFormat: String = "dd/MM/yyyy"
 
 }

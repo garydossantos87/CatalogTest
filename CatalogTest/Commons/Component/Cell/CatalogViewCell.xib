@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XyV-Mx-BzP" customClass="CatalogViewCell" customModule="CatalogTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="315"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="315"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SI-Lk-hdx" customClass="CatalogView" customModule="CatalogTest" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="381" height="310"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4SI-Lk-hdx" secondAttribute="bottom" id="Nkl-pk-3Zz"/>
+                <constraint firstItem="4SI-Lk-hdx" firstAttribute="top" secondItem="XyV-Mx-BzP" secondAttribute="top" constant="5" id="TSu-Vf-dML"/>
+                <constraint firstItem="4SI-Lk-hdx" firstAttribute="leading" secondItem="XyV-Mx-BzP" secondAttribute="leading" constant="5" id="n3k-vL-txY"/>
+                <constraint firstAttribute="trailing" secondItem="4SI-Lk-hdx" secondAttribute="trailing" constant="5" id="vll-bo-wzO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zbe-Tf-uw7"/>
+            <size key="customSize" width="391" height="315"/>
+            <connections>
+                <outlet property="catalogView" destination="4SI-Lk-hdx" id="bW3-Ee-Yth"/>
+            </connections>
+            <point key="canvasLocation" x="325.60000000000002" y="212.74362818590706"/>
+        </collectionViewCell>
+    </objects>
+</document>
