@@ -19,7 +19,7 @@ import BaseRxApplication
 
 enum ThemeStyle {
 
-    case textH0, textH1, textH2, textH3
+    case textH0, textH1, textH2, textH3, textH4,  buttonLink
 
     func style() -> Style {
         switch self {
@@ -47,6 +47,17 @@ enum ThemeStyle {
             style.textColor = ThemeColor.white.color()
             style.backgroundColor = ThemeColor.java.color()
             style.alignment = .center
+            return style
+        case .textH4:
+            var style = Style()
+            style.font = ThemeFont.bold_16.font()
+            style.textColor = ThemeColor.black.color()
+            return style
+        case .buttonLink:
+            var style = Style()
+            style.font = ThemeFont.regular_14.font()
+            style.textColor = ThemeColor.thunderbird.color()
+            style.alignment = .left
             return style
         }
     }
@@ -82,7 +93,7 @@ enum ThemeFont {
 
 enum ThemeImage {
 
-    case planet, favorite, share, save, catalog, coupon
+    case planet, favorite, share, save, catalog, coupon, direction, marker, phone, web, couponDescription, walk
 
     func image() -> UIImage {
         var imageName = ""
@@ -100,6 +111,18 @@ enum ThemeImage {
             imageName = "ic_catalog"
         case .coupon:
             imageName = "ic_coupon"
+        case .direction:
+            imageName = "ic_direction"
+        case .marker:
+            imageName = "ic_marker"
+        case .phone:
+            imageName = "ic_phone"
+        case .web:
+            imageName = "ic_web"
+        case .couponDescription:
+            imageName = "ic_coupon_description"
+        case .walk:
+            imageName = "ic_walk"
         }
 
         return UIImage.imageWithImageName(imageName)
@@ -109,13 +132,15 @@ enum ThemeImage {
 
 enum ThemeColor {
 
-    case transparent, white, thunderbird, chatelle, sprout, java
+    case transparent, white, thunderbird, chatelle, sprout, java, mercury, black
 
     func color() -> UIColor {
 
         switch self {
         case .white:
             return .white
+        case .black:
+            return .black
         case .thunderbird:
             return UIColor.rgb(rgbValue: 0xC9191F) // http://chir.ag/projects/name-that-color/#C9191F
         case .transparent:
@@ -126,6 +151,8 @@ enum ThemeColor {
             return UIColor.rgb(rgbValue: 0xB6D9B0) // http://chir.ag/projects/name-that-color/#B6D9B0
         case .java:
             return UIColor.rgb(rgbValue: 0x18BEBC) // http://chir.ag/projects/name-that-color/#18BEBC
+        case .mercury:
+            return UIColor.rgb(rgbValue: 0xE8E8E8) //http://chir.ag/projects/name-that-color/#E8E8E8
         }
     }
 

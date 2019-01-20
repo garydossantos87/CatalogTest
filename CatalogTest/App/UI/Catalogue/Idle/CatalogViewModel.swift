@@ -1,5 +1,5 @@
 //
-//  CatalogueViewModel.swift
+//  CatalogViewModel.swift
 //  CatalogTest
 //
 //  Created by Gary  Dos Santos on 19/01/2019.
@@ -8,7 +8,7 @@
 
 import BaseRxApplication
 
-final class CatalogueViewModel: BaseViewModel {
+final class CatalogViewModel: BaseViewModel {
     private enum CatalogSections: Int {
         case catalog = 0, coupon, sections
 
@@ -100,11 +100,28 @@ final class CatalogueViewModel: BaseViewModel {
     }
 
     func didSelectItemAt(indexPath: IndexPath) {
+        let error = BaseErrorEntity(code: "", message: "error_nearest_store".localized, raw: "")
+        guard let catalogs = catalogs else { return }
+
         switch CatalogSections.with(section: indexPath.section) {
         case .catalog where catalogsModel.indices.contains(indexPath.row):
-            print(catalogsModel[indexPath.row].name)
+            guard let catalog = catalogs.first(where: { $0.id ==  catalogsModel[indexPath.row].id} ) else { return }
+
+            guard let _ = catalog.nearestStore else {
+                actionError.execute(error)
+                return
+            }
+
+            wireframe.displayCatalogDetail(withCatalog: catalog)
         case .coupon where couponsModel.indices.contains(indexPath.row):
-            print(couponsModel[indexPath.row].name)
+            guard let catalog = catalogs.first(where: { $0.id ==  couponsModel[indexPath.row].id} ) else { return }
+
+            guard let _ = catalog.nearestStore else {
+                actionError.execute(error)
+                return
+            }
+            
+            wireframe.displayCatalogDetail(withCatalog: catalog)
         default: break
         }
     }

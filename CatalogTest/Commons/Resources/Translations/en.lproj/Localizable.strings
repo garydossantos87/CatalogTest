@@ -7,3 +7,27 @@
 "catalogs" = "Catalogs";
 
 "coupon" = "Coupon";
+
+"store_detail" = "Store detail";
+
+"start_navigation" = "Do you want to start navigation?";
+
+"open_maps_message" = "Your phone's map application will open";
+
+"cancel" = "Cancel";
+
+"allow" = "Allow";
+
+"start_browser" = "Do you want to see the website of the store?";
+
+"open_browser_message" = "The default browser of your phone will open";
+
+"start_phone" = "Do you want to call this number?";
+
+"open_phone_message" = "Your phone's calling application will open";
+
+"error_nearest_store" = "There is no store near";
+
+"unexpected_error_title" = "Oh, wow!";
+
+"accept" = "Accept";

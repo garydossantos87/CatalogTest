@@ -9,9 +9,15 @@
 enum CatalogType { case catalog, coupon }
 
 struct CatalogModel {
-    
+
+    var id: String = ""
     var name: String = ""
     var date: String = ""
     var type: CatalogType = .catalog
+    var address: String = ""
+    var phone: String = ""
+    var web: String = ""
+    var couponDescription: String = ""
+    var distance: String = ""
     
 }

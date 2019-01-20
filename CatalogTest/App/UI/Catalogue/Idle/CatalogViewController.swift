@@ -1,5 +1,5 @@
 //
-//  CatalogueViewController.swift
+//  CatalogViewController.swift
 //  CatalogTest
 //
 //  Created by Gary  Dos Santos on 19/01/2019.
@@ -9,22 +9,15 @@
 import BaseRxApplication
 import RxSwift
 
-final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewModel>, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout  {
+final class CatalogViewController: CatalogueBaseViewController<CatalogViewModel>, UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout  {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     private let flowLayoutSize: CGFloat = 8.0
     private let flowLayout = UICollectionViewFlowLayout()
 
-    override func createViewModel() -> CatalogueViewModel {
-        return CatalogueViewModel()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setupFlowLayout()
-        setupCollectionView()
+    override func createViewModel() -> CatalogViewModel {
+        return CatalogViewModel()
     }
 
     // ----------------------------
@@ -34,6 +27,8 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
     override func setupLayout() {
         super.setupLayout()
 
+        setupFlowLayout()
+        setupCollectionView()
     }
 
     override func setupRx() {
@@ -76,7 +71,6 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //        collectionView.collectionViewLayout.invalidateLayout()
         return viewModel.numberOfRows(section: section)
     }
 
@@ -85,12 +79,6 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
             let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: viewModel.cellIdentifier(indexPath: indexPath), for: indexPath) as? CatalogViewCell {
             collectionViewCell.set(viewModel: catalogViewCellModel)
             return collectionViewCell
-
-            //            collectionViewCell.set(viewModel: viewModel.cellViewModel(indexPath: indexPath), hasAddress: viewModel.address != nil)
-            //            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onCollectionViewPushed(_:)))
-            //            collectionViewCell.clusterMapDetailView.bottomContainerView.addGestureRecognizer(tapGesture)
-            //            tapGesture.delegate = self
-            //            return collectionViewCell
         }
         return UICollectionViewCell()
     }

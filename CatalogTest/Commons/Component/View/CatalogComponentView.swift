@@ -1,5 +1,5 @@
 //
-//  CatalogView.swift
+//  CatalogComponentView.swift
 //  CatalogTest
 //
 //  Created by Gary  Dos Santos on 19/01/2019.
@@ -9,7 +9,7 @@
 import BaseRxApplication
 import SnapKit
 
-final class CatalogView: BaseView {
+final class CatalogComponentView: BaseView {
 
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var containerTypeView: UIView!
@@ -22,7 +22,7 @@ final class CatalogView: BaseView {
     @IBOutlet weak var typeImageView: UIImageView!
     @IBOutlet weak var couponLabel: UILabel!
     
-    let viewModel = CatalogViewModel()
+    let viewModel = CatalogComponentViewModel()
 
     // ----------------------------
     // MARK: - Setups

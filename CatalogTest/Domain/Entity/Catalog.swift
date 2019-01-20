@@ -11,7 +11,7 @@ import BaseRxApplication
 
 final class Catalog: BaseEntity {
 
-    var id: String? = nil
+    var id: String = ""
     var coupon: Coupon? = nil
     var dateEnd: Date = Date()
     var retailerId: String = ""

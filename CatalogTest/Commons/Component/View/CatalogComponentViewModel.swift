@@ -1,5 +1,5 @@
 //
-//  CatalogViewModel.swift
+//  CatalogComponentViewModel.swift
 //  CatalogTest
 //
 //  Created by Gary  Dos Santos on 19/01/2019.
@@ -8,7 +8,7 @@
 
 import RxSwift
 
-final class CatalogViewModel {
+final class CatalogComponentViewModel {
 
     let name = BehaviorSubject<String?>(value: nil)
     let date = BehaviorSubject<String?>(value: nil)

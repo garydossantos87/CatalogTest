@@ -11,11 +11,17 @@ import BaseRxApplication
 extension BaseWireframe {
 
     func displayCatalogs(withCatalogs catalogs: [Catalog]) {
-        let viewController = CatalogueViewController()
+        let viewController = CatalogViewController()
         viewController.viewModel.setup(withCatalogs: catalogs)
         let navigationController = CatalogBaseNavigationController()
         navigationController.setViewControllers([viewController], animated: true)
         rootViewController(withNavigationController: navigationController)
+    }
+
+    func displayCatalogDetail(withCatalog catalog: Catalog) {
+        let viewController = CatalogDetailViewController()
+        viewController.viewModel.setup(withCatalog: catalog)
+        pushViewController(withViewController: viewController)
     }
 
 }

@@ -24,4 +24,10 @@ struct Constants {
 
     public static let dateFormat: String = "dd/MM/yyyy"
 
+    // ------------------------
+    // MARK: - Card Views
+    // ------------------------
+
+    public static let cardShadowColor: CGColor = ThemeColor.mercury.cgColor()
+
 }

@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="391" height="315"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SI-Lk-hdx" customClass="CatalogView" customModule="CatalogTest" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SI-Lk-hdx" customClass="CatalogComponentView" customModule="CatalogTest" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="391" height="315"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -34,7 +34,7 @@
             <viewLayoutGuide key="safeArea" id="Zbe-Tf-uw7"/>
             <size key="customSize" width="391" height="315"/>
             <connections>
-                <outlet property="catalogView" destination="4SI-Lk-hdx" id="bW3-Ee-Yth"/>
+                <outlet property="catalogView" destination="4SI-Lk-hdx" id="yeS-Bb-uei"/>
             </connections>
             <point key="canvasLocation" x="325.60000000000002" y="212.74362818590706"/>
         </collectionViewCell>

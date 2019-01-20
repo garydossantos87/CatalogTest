@@ -7,3 +7,27 @@
 "catalogs" = "Catálogos";
 
 "coupon" = "Cupón";
+
+"store_detail" = "Detalle de la tienda";
+
+"start_navigation" = "¿Quieres iniciar navegación?";
+
+"open_maps_message" = "Se abrirá la aplicación de mapas de tu teléfono";
+
+"cancel" = "Cancelar";
+
+"allow" = "Permitir";
+
+"start_browser" = "¿Quieres ver la web de la tienda?";
+
+"open_browser_message" = "Se abrirá el browser por defecto de tu teléfono";
+
+"start_phone" = "¿Quieres llamar a este número?";
+
+"open_phone_message" = "Se abrirá la aplicación de llamada de tu teléfono";
+
+"error_nearest_store" = "No hay ninguna tienda cerca";
+
+"unexpected_error_title" = "¡Oh, vaya!";
+
+"accept" = "Aceptar";

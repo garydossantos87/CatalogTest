@@ -12,7 +12,7 @@ import RxSwift
 
 final class CatalogViewCell: BaseCollectionCellView<CatalogViewCellModel> {
 
-    @IBOutlet weak var catalogView: CatalogView!
+    @IBOutlet weak var catalogView: CatalogComponentView!
 
     // ----------------------------
     // MARK: - Setups

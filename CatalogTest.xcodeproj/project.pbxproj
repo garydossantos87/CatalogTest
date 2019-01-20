@@ -17,9 +17,9 @@
 		BD8A23D321F30E6E005AB3DF /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23D221F30E6E005AB3DF /* ErrorEntity.swift */; };
 		BD8A23E421F30FFB005AB3DF /* CatalogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23D721F30FFB005AB3DF /* CatalogModel.swift */; };
 		BD8A23E821F30FFB005AB3DF /* CatalogModelDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23DC21F30FFB005AB3DF /* CatalogModelDataMapper.swift */; };
-		BD8A23F921F317AC005AB3DF /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23F721F317AC005AB3DF /* CatalogueViewController.swift */; };
-		BD8A23FA21F317AC005AB3DF /* CatalogueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8A23F821F317AC005AB3DF /* CatalogueViewController.xib */; };
-		BD8A23FC21F317B8005AB3DF /* CatalogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */; };
+		BD8A23F921F317AC005AB3DF /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23F721F317AC005AB3DF /* CatalogViewController.swift */; };
+		BD8A23FA21F317AC005AB3DF /* CatalogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8A23F821F317AC005AB3DF /* CatalogViewController.xib */; };
+		BD8A23FC21F317B8005AB3DF /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23FB21F317B8005AB3DF /* CatalogViewModel.swift */; };
 		BD8A240021F31925005AB3DF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A23FE21F31925005AB3DF /* SplashViewController.swift */; };
 		BD8A240121F31925005AB3DF /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8A23FF21F31925005AB3DF /* SplashViewController.xib */; };
 		BD8A240321F31932005AB3DF /* SplasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A240221F31932005AB3DF /* SplasViewModel.swift */; };
@@ -43,9 +43,9 @@
 		BD8A242C21F33A58005AB3DF /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242B21F33A58005AB3DF /* String+Utils.swift */; };
 		BD8A242E21F33B81005AB3DF /* BaseWireframe+NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A242D21F33B81005AB3DF /* BaseWireframe+NavigationHelper.swift */; };
 		BDB4282821F35C4A008C869F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDB4282521F35C4A008C869F /* Localizable.strings */; };
-		BDB4282E21F35F1D008C869F /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4282D21F35F1D008C869F /* CatalogView.swift */; };
-		BDB4283021F35F2D008C869F /* CatalogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB4282F21F35F2D008C869F /* CatalogView.xib */; };
-		BDB4283221F35F3B008C869F /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4283121F35F3B008C869F /* CatalogViewModel.swift */; };
+		BDB4282E21F35F1D008C869F /* CatalogComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4282D21F35F1D008C869F /* CatalogComponentView.swift */; };
+		BDB4283021F35F2D008C869F /* CatalogComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB4282F21F35F2D008C869F /* CatalogComponentView.xib */; };
+		BDB4283221F35F3B008C869F /* CatalogComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4283121F35F3B008C869F /* CatalogComponentViewModel.swift */; };
 		BDB4283821F37243008C869F /* CatalogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4283621F37243008C869F /* CatalogViewCell.swift */; };
 		BDB4283B21F3724D008C869F /* CatalogViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4283A21F3724D008C869F /* CatalogViewCellModel.swift */; };
 		BDB4283D21F372EA008C869F /* CatalogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB4283C21F372EA008C869F /* CatalogViewCell.xib */; };
@@ -55,6 +55,10 @@
 		BDEC45B621F466840047F433 /* CatalogHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45B421F466840047F433 /* CatalogHeaderViewCell.swift */; };
 		BDEC45B721F466840047F433 /* CatalogHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDEC45B521F466840047F433 /* CatalogHeaderViewCell.xib */; };
 		BDEC45B921F4669F0047F433 /* CatalogHeaderViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */; };
+		BDEC45BE21F480350047F433 /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45BC21F480350047F433 /* CatalogDetailViewController.swift */; };
+		BDEC45BF21F480350047F433 /* CatalogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDEC45BD21F480350047F433 /* CatalogDetailViewController.xib */; };
+		BDEC45C121F4803F0047F433 /* CatalogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45C021F4803F0047F433 /* CatalogDetailViewModel.swift */; };
+		BDEC45C521F49DFE0047F433 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45C421F49DFE0047F433 /* UIViewController+Utils.swift */; };
 		BDECD4EC21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */; };
 		CE31BB564037B42D3AB98CDD /* Pods_CatalogTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8924609DC018A50E321A83AA /* Pods_CatalogTest.framework */; };
 /* End PBXBuildFile section */
@@ -73,9 +77,9 @@
 		BD8A23D221F30E6E005AB3DF /* ErrorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
 		BD8A23D721F30FFB005AB3DF /* CatalogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogModel.swift; sourceTree = "<group>"; };
 		BD8A23DC21F30FFB005AB3DF /* CatalogModelDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogModelDataMapper.swift; sourceTree = "<group>"; };
-		BD8A23F721F317AC005AB3DF /* CatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
-		BD8A23F821F317AC005AB3DF /* CatalogueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogueViewController.xib; sourceTree = "<group>"; };
-		BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewModel.swift; sourceTree = "<group>"; };
+		BD8A23F721F317AC005AB3DF /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		BD8A23F821F317AC005AB3DF /* CatalogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogViewController.xib; sourceTree = "<group>"; };
+		BD8A23FB21F317B8005AB3DF /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		BD8A23FE21F31925005AB3DF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		BD8A23FF21F31925005AB3DF /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		BD8A240221F31932005AB3DF /* SplasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplasViewModel.swift; sourceTree = "<group>"; };
@@ -100,9 +104,9 @@
 		BD8A242D21F33B81005AB3DF /* BaseWireframe+NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseWireframe+NavigationHelper.swift"; sourceTree = "<group>"; };
 		BDB4282621F35C4A008C869F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BDB4282A21F35E0E008C869F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BDB4282D21F35F1D008C869F /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
-		BDB4282F21F35F2D008C869F /* CatalogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogView.xib; sourceTree = "<group>"; };
-		BDB4283121F35F3B008C869F /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		BDB4282D21F35F1D008C869F /* CatalogComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogComponentView.swift; sourceTree = "<group>"; };
+		BDB4282F21F35F2D008C869F /* CatalogComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogComponentView.xib; sourceTree = "<group>"; };
+		BDB4283121F35F3B008C869F /* CatalogComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogComponentViewModel.swift; sourceTree = "<group>"; };
 		BDB4283621F37243008C869F /* CatalogViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewCell.swift; sourceTree = "<group>"; };
 		BDB4283A21F3724D008C869F /* CatalogViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewCellModel.swift; sourceTree = "<group>"; };
 		BDB4283C21F372EA008C869F /* CatalogViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogViewCell.xib; sourceTree = "<group>"; };
@@ -113,6 +117,10 @@
 		BDEC45B421F466840047F433 /* CatalogHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHeaderViewCell.swift; sourceTree = "<group>"; };
 		BDEC45B521F466840047F433 /* CatalogHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogHeaderViewCell.xib; sourceTree = "<group>"; };
 		BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHeaderViewCellModel.swift; sourceTree = "<group>"; };
+		BDEC45BC21F480350047F433 /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
+		BDEC45BD21F480350047F433 /* CatalogDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogDetailViewController.xib; sourceTree = "<group>"; };
+		BDEC45C021F4803F0047F433 /* CatalogDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewModel.swift; sourceTree = "<group>"; };
+		BDEC45C421F49DFE0047F433 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogBaseColumnFlowLayout.swift; sourceTree = "<group>"; };
 		BDF098A221F3590000E79D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,9 +328,8 @@
 		BD8A23F621F31791005AB3DF /* Catalogue */ = {
 			isa = PBXGroup;
 			children = (
-				BD8A23F721F317AC005AB3DF /* CatalogueViewController.swift */,
-				BD8A23F821F317AC005AB3DF /* CatalogueViewController.xib */,
-				BD8A23FB21F317B8005AB3DF /* CatalogueViewModel.swift */,
+				BDEC45BB21F4800A0047F433 /* Detail */,
+				BDEC45BA21F47FF20047F433 /* Idle */,
 			);
 			path = Catalogue;
 			sourceTree = "<group>";
@@ -362,6 +369,7 @@
 			children = (
 				BD8A242D21F33B81005AB3DF /* BaseWireframe+NavigationHelper.swift */,
 				BD8A242B21F33A58005AB3DF /* String+Utils.swift */,
+				BDEC45C421F49DFE0047F433 /* UIViewController+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,9 +394,9 @@
 		BDB4282C21F35E65008C869F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BDB4282D21F35F1D008C869F /* CatalogView.swift */,
-				BDB4282F21F35F2D008C869F /* CatalogView.xib */,
-				BDB4283121F35F3B008C869F /* CatalogViewModel.swift */,
+				BDB4282D21F35F1D008C869F /* CatalogComponentView.swift */,
+				BDB4282F21F35F2D008C869F /* CatalogComponentView.xib */,
+				BDB4283121F35F3B008C869F /* CatalogComponentViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,6 +458,26 @@
 				BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */,
 			);
 			path = CatalogHeader;
+			sourceTree = "<group>";
+		};
+		BDEC45BA21F47FF20047F433 /* Idle */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A23F721F317AC005AB3DF /* CatalogViewController.swift */,
+				BD8A23F821F317AC005AB3DF /* CatalogViewController.xib */,
+				BD8A23FB21F317B8005AB3DF /* CatalogViewModel.swift */,
+			);
+			path = Idle;
+			sourceTree = "<group>";
+		};
+		BDEC45BB21F4800A0047F433 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC45BC21F480350047F433 /* CatalogDetailViewController.swift */,
+				BDEC45BD21F480350047F433 /* CatalogDetailViewController.xib */,
+				BDEC45C021F4803F0047F433 /* CatalogDetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		D6308D1FE2477B5AA775E919 /* Pods */ = {
@@ -531,14 +559,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB4283021F35F2D008C869F /* CatalogView.xib in Resources */,
+				BDB4283021F35F2D008C869F /* CatalogComponentView.xib in Resources */,
 				BDEC45B721F466840047F433 /* CatalogHeaderViewCell.xib in Resources */,
 				BDB4283D21F372EA008C869F /* CatalogViewCell.xib in Resources */,
 				BDB4282821F35C4A008C869F /* Localizable.strings in Resources */,
-				BD8A23FA21F317AC005AB3DF /* CatalogueViewController.xib in Resources */,
+				BD8A23FA21F317AC005AB3DF /* CatalogViewController.xib in Resources */,
 				BDEA9AC621EE4A7700537D41 /* LaunchScreen.storyboard in Resources */,
 				BDEA9AC321EE4A7700537D41 /* Assets.xcassets in Resources */,
 				BD8A240121F31925005AB3DF /* SplashViewController.xib in Resources */,
+				BDEC45BF21F480350047F433 /* CatalogDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,13 +671,13 @@
 			files = (
 				BD8A240B21F32834005AB3DF /* Constants.swift in Sources */,
 				BD8A23B321F30CF6005AB3DF /* AppService.swift in Sources */,
-				BDB4283221F35F3B008C869F /* CatalogViewModel.swift in Sources */,
+				BDB4283221F35F3B008C869F /* CatalogComponentViewModel.swift in Sources */,
 				BDB4283821F37243008C869F /* CatalogViewCell.swift in Sources */,
 				BD8A23D321F30E6E005AB3DF /* ErrorEntity.swift in Sources */,
 				BDEC45B621F466840047F433 /* CatalogHeaderViewCell.swift in Sources */,
 				BD8A240621F31A2C005AB3DF /* Theme.swift in Sources */,
 				BD8A23B921F30CF6005AB3DF /* NetworkAPI.swift in Sources */,
-				BD8A23FC21F317B8005AB3DF /* CatalogueViewModel.swift in Sources */,
+				BD8A23FC21F317B8005AB3DF /* CatalogViewModel.swift in Sources */,
 				BD8A241B21F3317F005AB3DF /* CouponEntityDataMapper.swift in Sources */,
 				BD8A242521F334A9005AB3DF /* CatalogRepositoryImpl.swift in Sources */,
 				BDB4283B21F3724D008C869F /* CatalogViewCellModel.swift in Sources */,
@@ -658,15 +687,17 @@
 				BD8A23B721F30CF6005AB3DF /* AppOauthGatewayImpl.swift in Sources */,
 				BD8A242121F3332A005AB3DF /* CatalogEntityDataMapper.swift in Sources */,
 				BD8A242921F33622005AB3DF /* GetCatalogsUseCaseImpl.swift in Sources */,
-				BDB4282E21F35F1D008C869F /* CatalogView.swift in Sources */,
+				BDB4282E21F35F1D008C869F /* CatalogComponentView.swift in Sources */,
 				BD8A241F21F33273005AB3DF /* Catalog.swift in Sources */,
 				BD8A23B421F30CF6005AB3DF /* AppOauthService.swift in Sources */,
+				BDEC45BE21F480350047F433 /* CatalogDetailViewController.swift in Sources */,
 				BD8A23E421F30FFB005AB3DF /* CatalogModel.swift in Sources */,
 				BD8A240021F31925005AB3DF /* SplashViewController.swift in Sources */,
 				BD8A242E21F33B81005AB3DF /* BaseWireframe+NavigationHelper.swift in Sources */,
 				BDEA9ABC21EE4A7600537D41 /* AppDelegate.swift in Sources */,
 				BD8A240D21F329D7005AB3DF /* CatalogueBaseViewController.swift in Sources */,
 				BD8A240F21F32AED005AB3DF /* CouponEntity.swift in Sources */,
+				BDEC45C521F49DFE0047F433 /* UIViewController+Utils.swift in Sources */,
 				BD8A241721F33070005AB3DF /* NearestStore.swift in Sources */,
 				BD8A241321F32B9A005AB3DF /* NearestStoreEntity.swift in Sources */,
 				BD8A242321F33487005AB3DF /* CatalogRepository.swift in Sources */,
@@ -679,8 +710,9 @@
 				BDECD4EC21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift in Sources */,
 				BD8A23B521F30CF6005AB3DF /* AppGateway.swift in Sources */,
 				BD8A242C21F33A58005AB3DF /* String+Utils.swift in Sources */,
-				BD8A23F921F317AC005AB3DF /* CatalogueViewController.swift in Sources */,
+				BD8A23F921F317AC005AB3DF /* CatalogViewController.swift in Sources */,
 				BD8A241521F32C8E005AB3DF /* CatalogEntity.swift in Sources */,
+				BDEC45C121F4803F0047F433 /* CatalogDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
