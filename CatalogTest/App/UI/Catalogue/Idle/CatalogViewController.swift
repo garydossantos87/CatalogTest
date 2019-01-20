@@ -31,10 +31,6 @@ final class CatalogViewController: CatalogueBaseViewController<CatalogViewModel>
         setupCollectionView()
     }
 
-    override func setupRx() {
-        super.setupRx()
-    }
-
     // ----------------------------
     // MARK: - Private Func 🔐
     // ----------------------------

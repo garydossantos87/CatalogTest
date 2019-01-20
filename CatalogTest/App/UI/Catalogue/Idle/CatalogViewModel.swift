@@ -74,7 +74,7 @@ final class CatalogViewModel: BaseViewModel {
     func titleForHeaderInSection(_ section: Int) -> String {
         switch CatalogSections.with(section: section) {
         case .catalog:
-            return "catalog".localized.uppercased()
+            return "catalogs".localized.uppercased()
         default:
             return "coupon".localized.uppercased()
         }

@@ -27,4 +27,5 @@ final class CatalogViewCell: BaseCollectionCellView<CatalogViewCellModel> {
             self.catalogView.viewModel.setup(withCatalogModel: catalogModel)
         }).disposed(by: disposeBag)
     }
+    
 }

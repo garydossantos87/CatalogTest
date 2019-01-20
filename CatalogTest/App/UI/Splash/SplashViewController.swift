@@ -14,17 +14,4 @@ final class SplashViewController: CatalogueBaseViewController<SplashViewModel> {
         return SplashViewModel()
     }
 
-    // ----------------------------
-    // MARK: - Setups
-    // ----------------------------
-
-    override func setupLayout() {
-        super.setupLayout()
-
-    }
-
-    override func setupRx() {
-        super.setupRx()
-    }
-
 }

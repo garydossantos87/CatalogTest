@@ -37,4 +37,5 @@ final class CatalogHeaderViewCell: BaseCollectionCellView<CatalogHeaderViewCellM
 
         viewModel.title.bind(to: titleLabel.rx.text).disposed(by: disposeBag)
     }
+    
 }
