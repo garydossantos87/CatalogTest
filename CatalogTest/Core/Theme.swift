@@ -19,7 +19,7 @@ import BaseRxApplication
 
 enum ThemeStyle {
 
-    case textH0, textH1, textH2
+    case textH0, textH1, textH2, textH3
 
     func style() -> Style {
         switch self {
@@ -39,6 +39,13 @@ enum ThemeStyle {
             style.font = ThemeFont.regular_12.font()
             style.textColor = ThemeColor.white.color()
             style.backgroundColor = ThemeColor.thunderbird.color()
+            style.alignment = .center
+            return style
+        case .textH3:
+            var style = Style()
+            style.font = ThemeFont.bold_16.font()
+            style.textColor = ThemeColor.white.color()
+            style.backgroundColor = ThemeColor.java.color()
             style.alignment = .center
             return style
         }
@@ -102,7 +109,7 @@ enum ThemeImage {
 
 enum ThemeColor {
 
-    case transparent, white, thunderbird, chatelle, sprout
+    case transparent, white, thunderbird, chatelle, sprout, java
 
     func color() -> UIColor {
 
@@ -117,6 +124,8 @@ enum ThemeColor {
             return UIColor.rgb(rgbValue: 0xB4ACB8) // http://chir.ag/projects/name-that-color/#B4ACB8
         case .sprout:
             return UIColor.rgb(rgbValue: 0xB6D9B0) // http://chir.ag/projects/name-that-color/#B6D9B0
+        case .java:
+            return UIColor.rgb(rgbValue: 0x18BEBC) // http://chir.ag/projects/name-that-color/#18BEBC
         }
     }
 

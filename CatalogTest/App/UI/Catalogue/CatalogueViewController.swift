@@ -45,9 +45,9 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
     // ----------------------------
 
     private func setupFlowLayout() {
-        flowLayout.footerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
-        flowLayout.headerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
-        flowLayout.sectionInset = UIEdgeInsets(top: flowLayoutSize - 2.0 , left: flowLayoutSize, bottom: flowLayoutSize - 2.0, right: flowLayoutSize)
+                flowLayout.footerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
+                flowLayout.headerReferenceSize = CGSize(width: flowLayoutSize, height: flowLayoutSize)
+        flowLayout.sectionInset = UIEdgeInsets(top: flowLayoutSize, left: flowLayoutSize, bottom: flowLayoutSize, right: flowLayoutSize)
         flowLayout.minimumLineSpacing = flowLayoutSize
         flowLayout.minimumInteritemSpacing = flowLayoutSize
     }
@@ -64,20 +64,26 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
 
     private func registerCollectionCells() {
         CatalogViewCell.register(collectionView: collectionView, cellClass: CatalogViewCell.self)
+        collectionView.register(UINib(nibName: CatalogHeaderViewCell.reuseIdentifier, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CatalogHeaderViewCell.reuseIdentifier)
     }
 
     // ------------------------------------
     // MARK: - UICollectionViewDataSource
     // ------------------------------------
 
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.numberOfSections()
+    }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        collectionView.collectionViewLayout.invalidateLayout()
+        //        collectionView.collectionViewLayout.invalidateLayout()
         return viewModel.numberOfRows(section: section)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: viewModel.cellIdentifier(indexPath: indexPath), for: indexPath) as? CatalogViewCell {
-            collectionViewCell.set(viewModel: viewModel.cellViewModel(indexPath: indexPath))
+        if let catalogViewCellModel = viewModel.cellViewModel(indexPath: indexPath) as? CatalogViewCellModel,
+            let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: viewModel.cellIdentifier(indexPath: indexPath), for: indexPath) as? CatalogViewCell {
+            collectionViewCell.set(viewModel: catalogViewCellModel)
             return collectionViewCell
 
             //            collectionViewCell.set(viewModel: viewModel.cellViewModel(indexPath: indexPath), hasAddress: viewModel.address != nil)
@@ -87,6 +93,37 @@ final class CatalogueViewController: CatalogueBaseViewController<CatalogueViewMo
             //            return collectionViewCell
         }
         return UICollectionViewCell()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader, let catalogHeaderViewCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CatalogHeaderViewCell.reuseIdentifier, for: indexPath) as? CatalogHeaderViewCell {
+            catalogHeaderViewCell.viewModel.setup(withTitle: viewModel.titleForHeaderInSection(indexPath.section))
+            return catalogHeaderViewCell
+        } else {
+            return UICollectionReusableView()
+        }
+    }
+
+    // ------------------------------------
+    // MARK: - UICollectionViewDelegate
+    // ------------------------------------
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItemAt(indexPath: indexPath)
+    }
+
+    // ---------------------------------------------
+    // MARK: - UICollectionViewDelegateFlowLayout
+    // ---------------------------------------------
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+
+        return CGSize(width: collectionView.bounds.size.width, height: CatalogHeaderViewCell.preferredHeightSize)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+
+        return CGSize.zero
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

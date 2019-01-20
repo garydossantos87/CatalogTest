@@ -9,7 +9,7 @@
 import BaseRxApplication
 import RxSwift
 
-final class CatalogViewCellModel {
+final class CatalogViewCellModel: BaseCellViewModel {
 
     let catalogModel = BehaviorSubject<CatalogModel?>(value: nil)
 

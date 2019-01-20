@@ -52,6 +52,9 @@
 		BDEA9ABC21EE4A7600537D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */; };
 		BDEA9AC321EE4A7700537D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC221EE4A7700537D41 /* Assets.xcassets */; };
 		BDEA9AC621EE4A7700537D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEA9AC421EE4A7700537D41 /* LaunchScreen.storyboard */; };
+		BDEC45B621F466840047F433 /* CatalogHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45B421F466840047F433 /* CatalogHeaderViewCell.swift */; };
+		BDEC45B721F466840047F433 /* CatalogHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDEC45B521F466840047F433 /* CatalogHeaderViewCell.xib */; };
+		BDEC45B921F4669F0047F433 /* CatalogHeaderViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */; };
 		BDECD4EC21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */; };
 		CE31BB564037B42D3AB98CDD /* Pods_CatalogTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8924609DC018A50E321A83AA /* Pods_CatalogTest.framework */; };
 /* End PBXBuildFile section */
@@ -107,6 +110,9 @@
 		BDEA9ABB21EE4A7600537D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEA9AC221EE4A7700537D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEA9AC721EE4A7700537D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEC45B421F466840047F433 /* CatalogHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHeaderViewCell.swift; sourceTree = "<group>"; };
+		BDEC45B521F466840047F433 /* CatalogHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogHeaderViewCell.xib; sourceTree = "<group>"; };
+		BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHeaderViewCellModel.swift; sourceTree = "<group>"; };
 		BDECD4EB21F3C8A6006A9866 /* CatalogBaseColumnFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogBaseColumnFlowLayout.swift; sourceTree = "<group>"; };
 		BDF098A221F3590000E79D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -390,9 +396,8 @@
 		BDB4283321F371AF008C869F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BDB4283621F37243008C869F /* CatalogViewCell.swift */,
-				BDB4283C21F372EA008C869F /* CatalogViewCell.xib */,
-				BDB4283A21F3724D008C869F /* CatalogViewCellModel.swift */,
+				BDEC45B221F466280047F433 /* Catalog */,
+				BDEC45B321F466590047F433 /* CatalogHeader */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -425,6 +430,26 @@
 				BD8A21B821F30CF5005AB3DF /* Domain */,
 			);
 			path = CatalogTest;
+			sourceTree = "<group>";
+		};
+		BDEC45B221F466280047F433 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				BDB4283621F37243008C869F /* CatalogViewCell.swift */,
+				BDB4283C21F372EA008C869F /* CatalogViewCell.xib */,
+				BDB4283A21F3724D008C869F /* CatalogViewCellModel.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		BDEC45B321F466590047F433 /* CatalogHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC45B421F466840047F433 /* CatalogHeaderViewCell.swift */,
+				BDEC45B521F466840047F433 /* CatalogHeaderViewCell.xib */,
+				BDEC45B821F4669F0047F433 /* CatalogHeaderViewCellModel.swift */,
+			);
+			path = CatalogHeader;
 			sourceTree = "<group>";
 		};
 		D6308D1FE2477B5AA775E919 /* Pods */ = {
@@ -507,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB4283021F35F2D008C869F /* CatalogView.xib in Resources */,
+				BDEC45B721F466840047F433 /* CatalogHeaderViewCell.xib in Resources */,
 				BDB4283D21F372EA008C869F /* CatalogViewCell.xib in Resources */,
 				BDB4282821F35C4A008C869F /* Localizable.strings in Resources */,
 				BD8A23FA21F317AC005AB3DF /* CatalogueViewController.xib in Resources */,
@@ -619,6 +645,7 @@
 				BDB4283221F35F3B008C869F /* CatalogViewModel.swift in Sources */,
 				BDB4283821F37243008C869F /* CatalogViewCell.swift in Sources */,
 				BD8A23D321F30E6E005AB3DF /* ErrorEntity.swift in Sources */,
+				BDEC45B621F466840047F433 /* CatalogHeaderViewCell.swift in Sources */,
 				BD8A240621F31A2C005AB3DF /* Theme.swift in Sources */,
 				BD8A23B921F30CF6005AB3DF /* NetworkAPI.swift in Sources */,
 				BD8A23FC21F317B8005AB3DF /* CatalogueViewModel.swift in Sources */,
@@ -627,6 +654,7 @@
 				BDB4283B21F3724D008C869F /* CatalogViewCellModel.swift in Sources */,
 				BD8A23B621F30CF6005AB3DF /* AppGatewayImpl.swift in Sources */,
 				BD8A240321F31932005AB3DF /* SplasViewModel.swift in Sources */,
+				BDEC45B921F4669F0047F433 /* CatalogHeaderViewCellModel.swift in Sources */,
 				BD8A23B721F30CF6005AB3DF /* AppOauthGatewayImpl.swift in Sources */,
 				BD8A242121F3332A005AB3DF /* CatalogEntityDataMapper.swift in Sources */,
 				BD8A242921F33622005AB3DF /* GetCatalogsUseCaseImpl.swift in Sources */,
